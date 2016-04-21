@@ -1,0 +1,136 @@
+// This is an example of the json response content for a EchoNest query for an artist.
+// The format and expect value of each field are the same as what is in this example.
+
+{  
+   "response":{  
+      "status":{  
+         "version":"4.2",
+         "code":0,
+         "message":"Success"
+      },
+      "start":0,
+      "total":5733,
+      "blogs":[  //required
+         {  
+            "name":"New Releases From Tzadik", //required
+            "url":"http://avantmusicnews.com/2016/03/22/new-releases-from-tzadik-7/", //required
+            "date_posted":"2016-03-22T13:41:12", //rwquired
+            "date_found":"2016-03-23T00:00:00",
+            "summary":"Source: Tzadik. Cyro Baptista : BlueFly A veteran of groups led by Herbie Hancock, Yo-Yo Ma, Laurie Anderson, Paul Simon, <span>Phish</span>, Sting and many more, Cyro Baptista continues to bring life, love and madness to every ensemble he works with. His own bands Banquet of the Spirits and Beat the Donkey tour the world to [...] New Releases From Tzadik", //required
+            "id":"a632362e3cf482942c0f4e9824492678" //required, this can be the key for this schema
+         },
+         {  
+            "name":"Yonder Mountain String Band Gets The Crystal Ballroom Bouncing (SHOW REVIEW/PHOTOS)",
+            "url":"http://www.glidemagazine.com/158047/yonder-mountain-string-band-gets-crystal-ballroom-bouncing-show-reviewphotos/",
+            "date_posted":"2016-03-22T07:10:22",
+            "date_found":"2016-03-22T00:00:00",
+            "summary":"they worked through two sets of music. A strong second set opener started with long-time fan favorite \"Traffic Jam,\" then transitioned into Smokey Robinson's \"I Second That Emotion\" and back. Some other notable covers included The Lovin' Spoonful's \"Summer In The City,\" The Beatles' \"Only a Northern Song,\" and <span>Phish</span>'s \"Scent Of A Mule.\" Kral handled vocals on a smoldering \"White Freightliner\" to end the show. When mandolin player and big personality Jeff Austin left the band a couple of years ago, Aijala, Johnston and Kaufmann forged ahead and barely missed a beat, taking what at first seemed",
+            "id":"4a80e96da258a8f6748e5737a8ab382b"
+         },
+         {  
+            "name":"10 Must See Acts At 2016 Rock N Roll Resort v6 Low Key This Weekend (PREVIEW)",
+            "url":"http://www.glidemagazine.com/157918/rock-n-roll-resort-heads-hudson-valley-resort-march-25-27-preview/",
+            "date_posted":"2016-03-21T00:16:55",
+            "date_found":"2016-03-21T00:00:00",
+            "summary":"shredder, Wiley Griffin, on the axe is worth admission alone. Mister F This musical juggernaut from Albany have been tour machines for years now and just starting to really get their due. Catch this set and one can see the mesmerizing Scott Hannay on keys sharing his groove in exemplary fashion. Uncle Ebenezer There are <span>Phish</span> cover bands and then there is Uncle Ebenezer. With no <span>Phish</span> shows at this time of year, Uncle Ebenezer is an ideal way to capture some of the band's magic. UE delivers the nuance and energy of <span>Phish</span>'s music in a unique and contagious fashion. Space Bacon The band has been on fire of",
+            "id":"61943aabae785b5d057569b451fd238e"
+         },
+         {  
+            "name":"BISS 03.09.16 : SMOKED OUT SOUL / STRING CHEESE INCIDENT / STEEP CANYON RANGERS / W-BEEZ/ BRUCE SPRINGSTEEN",
+            "url":"http://livebisslist.blogspot.com/2016/03/biss-030916-smoked-out-soul-string.html",
+            "date_posted":"2016-03-17T21:24:53",
+            "date_found":"2016-03-18T00:00:00",
+            "summary":"collaboration of jazz and funk musicians, the W-BEEZ: WIL BLADES, WILL BERNARD, MIKE CLARK, & HAILEY NISWANGER are at Boom Boom Room **WIN TICKETS**. If you're in the North Bay, you might want to hit the Sweetwater for An Intimate solo & acoustic performance by Citizen Cope. We also have CHUM (A TRIBUTE TO <span>PHISH</span>) THE WILD KINDNESS, REUBEN'S RIDE, BENEFITING COLEMAN ELEMENTARY SCHOOL IN SAN RAFAEL **WIN TICKETS** at The Hopmonk Novato. And to top off the weekend, we have The Boss, BRUCE SPRINGSTEEN AND THE E STREET BAND at Oracle Arena on Sunday night! Born and raised New Jersey, I know where I'll be and MISS BISS ... Vowws (LA) , Winkie (NYC), April, Worker/Parasite (OAK), It's Own Infinite Flower (SF)**WIN TICKETS**Brick & Mortar , San Francisco, CAhttp://brickandmortarmusic.com/shows.cfmShow: 9PM$7-$10 Sat, 3/12/2016CHUM (A TRIBUTE TO <span>PHISH</span>) THE WILD KINDNESS, REUBEN'S RIDE, *****BENEFITING COLEMAN ELEMENTARY SCHOOL IN SAN RAFAEL*******WIN TICKETS**Hopmonk Novato, Novato, CAhttp://www.hopmonk.com/novato/music-and-events/Show: 8PM$15 Sat, 3/12/2016MARSHALL HOUSE PROJECT, SOLUZION**WIN TICKETS**Hopmonk Sebastapol, Sebastopol, CAhttp://www.hopmonk.com/sebastopol/music-and-events/Show:",
+            "id":"eb9ac256c868cd79d6f9ff9173458748"
+         },
+         {  
+            "name":"Dave Matthews Remembers Chip Hooper: 'He Made the World a Better Place'",
+            "url":"http://www.billboard.com/node/7207798",
+            "date_posted":"2016-03-12T23:59:39",
+            "date_found":"2016-03-13T00:00:00",
+            "summary":"Chip Hooper, who was the head of music at Paradigm Talent Agency and the personal agent for Dave Matthews Band, <span>Phish</span> and others, passed away on... Dave Matthews Remembers Chip Hooper: 'He Made the World a Better Place'",
+            "id":"9526358ee7d05db6e4d10c73a2f7f510"
+         },
+         {  
+            "name":"Phish: \"Hoist\"on vinyl for Record Store Day",
+            "url":"http://werksman.blogspot.com/2016/03/phish-hoiston-vinyl-for-record-store-day.html",
+            "date_posted":"2016-03-11T07:08:01",
+            "date_found":"2016-03-12T00:00:00",
+            "summary":"Hoist comes to vinyl for Record Store Day. the fifth <span>Phish</span> studio album will be released as a 2LP on orange splatter colored vinyl: On Record Store Day 2016, <span>Phish</span> will release \"Hoist\", the band's fifth full-length studio album, as a limited, individually numbered, 180g 2-LP orange splatter colored vinyl set, available exclusively at participating independently owned record stores across the country. Record Store Day is Saturday, April 16. Hoist was recorded on 24-track 2″ reels in October-November 1993 at American Recording Co. in Calabasas, California. Three singles were released from Hoist - \"Down With Disease\", \"Sample In A Jar\" and \"Julius\" and all three remain in common rotation at <span>Phish</span> shows. Live tracks from an April 21, 1993 Columbus, Ohio rendition of \"Split Open And Melt\" were blended with studio tracks including parts of \"Yerushalayim Shel Zahav\" and effects to create the experimental D Side, \"Demand.\" Bass player Mike Gordon directed their first (and last) music video. Down With Disease failed to make a lasting impression on the popular music networks back then, but the song remins a live favorite and is used as a launch pad for extensive jamming. » <span>phish</span>.com <span>Phish</span>: \"Hoist\"on vinyl for Record Store Day",
+            "id":"843dfd9e525647e126f928e8681ec5c3"
+         },
+         {  
+            "name":"Pistachio release new single, announce album release date",
+            "url":"http://thebaybridged.com/2016/03/10/pistachio-release-new-single-announce-album-release-date/",
+            "date_posted":"2016-03-10T22:30:00",
+            "date_found":"2016-03-11T00:00:00",
+            "summary":"Photo credit: Laura Turbow I don't listen to much <span>Phish</span>, but Oakland-based Pistachio certainly have some musical elements in common with the jam-band legends: eccentric song structures, excellent musicianship, a loose, fun feeling to even the most complex arrangements. Their latest offering \"Damn You, Thunderhead\" exemplifies all these qualities and the fact that the band excels in genre alchemy, turning a hodgepodge of seemingly contradictory styles into groovy rock and roll gold. You can expect more eclectic compositions on their upcoming LP Explorer slated to drop March 15th. After",
+            "id":"e7ecb3113669d795963baeeceb173b17"
+         },
+         {  
+            "name":"Umphrey’s McGee delivers a Walletsworth",
+            "url":"http://www.thevinyldistrict.com/storefront/2016/03/umphreys-mcgee-delivers-a-walletsworth/",
+            "date_posted":"2016-03-10T17:30:24",
+            "date_found":"2016-03-11T00:00:00",
+            "summary":"The value proposition that musicians can present to their customers has shifted dramatically. Steely Dan tours (regularly!), <span>Phish</span> and Widespread Panic pamper the well-heeled with intimate concert packages at all-inclusive Mexican resorts. Def Leppard, Trace Adkins, Kenny Rogers, Smokey Robinson, Flo Rida, Huey Lewis, Weezer and gaggles of jam bands whisk fans away on performance cruises. And with the advent of streaming services like Spotify and Pandora (RIP Grooveshark) the ability to discover the new and discard the old music costs less than ever. For the \"improg\" group Umphrey's ... shows that you aren't currently trying to watch. UM's sound is unerringly precise, owing in part to the sharp drive provided by percussionist Andy Farag and drummer Kris Myers. On the whole, UM seem to make much more extensive use of effects and loops than I'm used to hearing from bands like <span>Phish</span>. In that sense, their sound feels much more like electronica. The beat ebbs and flows, but you'd be forgiven for believing that it never actually stops over the course of an energetic three-hour show. I'm a sucker for (musical) teases, so teasing bits of Sugar Hill Gang's \"Rapper's Delight\" late in the second",
+            "id":"f431f497822bc66177acd72cba88d833"
+         },
+         {  
+            "name":"Veteran Paradigm Agent Chip Hooper Dies",
+            "url":"http://www.hypebot.com/hypebot/2016/03/-veteran-paradigm-agent-chip-hooper-dies.html",
+            "date_posted":"2016-03-07T18:45:42",
+            "date_found":"2016-03-08T00:00:00",
+            "summary":"Much-loved booking agent Chip Hooper, the worldwide head of music for Paradigm Talent & Literary Agency, died on Saturday after a 4-year battle with cancer. Hooper was the longtime agent for the Dave Matthews Band, <span>Phish</span> and Ray Lamontagne and had been named Pollstar Magazine's Bobby Brooks Agent of the Year 8 times, more than any other.The news of his Hooper's death was first announced by Golden Grizzlies coach Greg Kampe via Twitter. Hooper's son Max plays for the team. \"All Grizz fans. Chip Hooper, Max's father lost his battle with cancer tonight,\" Kampe tweeted. \"Please put the Hooper family",
+            "id":"17d1be271d17be73f5c4338a7c456e22"
+         },
+         {  
+            "name":"Phish: new archival release Lexington 11/07/96",
+            "url":"http://werksman.blogspot.com/2016/03/phish-new-archival-release-lexington.html",
+            "date_posted":"2016-03-07T17:34:18",
+            "date_found":"2016-03-08T00:00:00",
+            "summary":"Another archival <span>Phish</span> release is available for streaming and download: 11/7/96 @ Rupp Arena, Lexington, KY. They were still riding on the Talking Heads funk of the Remin In Light musical costume they performed at Halloween. Set 2 contains the longest ever Bathtub Gin. Setlist and notes from <span>phish</span>.net: Set 1: Chalk Dust Torture, Weigh > Rift > Guelah Papyrus, Stash, Waste, Guyute, Free > Tela, Character Zero Set 2: Suzy Greenberg > Bathtub Gin -> Hold Your Head Up > Bike > Hold Your Head Up, You Enjoy Myself Encore: Frankenstein Notes: Trey teased Dave's Energy Guide during Gin. Fish humorously stumbled through Bike, which was played by request. » livephish.com <span>Phish</span>: new archival release Lexington 11/07/96",
+            "id":"1123df12a7d1e3268c12fdbf76552336"
+         },
+         {  
+            "name":"Cover me: Devil's Haircut",
+            "url":"http://werksman.blogspot.com/2016/03/cover-me-devils-haircut.html",
+            "date_posted":"2016-03-07T11:35:08",
+            "date_found":"2016-03-08T00:00:00",
+            "summary":"Listen to The Jauntee performing a jammed out take on Beck's Devil's Haircut @ The Spot in Providence - 2016/02/25. The full show is available on the Live Music Archive The Boston band is in the midst of their Winter tour. <span>Phish</span> fans will like their penchant for Type II jamming. The Jauntee: Scott Ferber: drums Caton Sollenberger: guitar Tyler Adams: keyboards John Loland: bass Live dates: 03/10 Woodlands Tavern - Columbus, OH (w/ Dangermuffin)03/11 Hideaway Saloon - Louisville, KY03/12 Madison Live - Covington, KY03/16 Hodi's Half Note - Fort Collins, CO03/17 Victoria Tavern - Salida, CO03/18",
+            "id":"715ec7afe3de172ad88cf5e15f0b6ebb"
+         },
+         {  
+            "name":"Paradigm's Chip Hooper, Agent for Dave Matthews Band, Phish & More, Dies at 53",
+            "url":"http://www.billboard.com/node/6898326",
+            "date_posted":"2016-03-06T20:03:28",
+            "date_found":"2016-03-07T00:00:00",
+            "summary":"Chip Hooper, the worldwide head of music at Paradigm Talent Agency, died Saturday (March 5) after a long battle with cancer. He was 53.Hooper, who... Paradigm's Chip Hooper, Agent for Dave Matthews Band, <span>Phish</span> & More, Dies at 53",
+            "id":"b0b7f2368fe16d52e69ca645d96e5230"
+         },
+         {  
+            "name":"Your Intro to Phish",
+            "url":"http://www.50thirdand3rd.com/your-intro-to-phish/",
+            "date_posted":"2016-03-05T13:46:55",
+            "date_found":"2016-03-06T00:00:00",
+            "summary":"By Steph \"<span>Phish</span>. Jam band. Boring hippie stuff. No thanks.\" This used to be me. I underestimated this band because I judged the book by its cover. Little did I know, this jam band had everything to offer - funk, rock, bluegrass, and so much more. This summer, I will go to my first <span>Phish</span> show at Deer Creek in Indiana. I'll be Page Side in the pit, so if you are there, we need to meet up and rage. (Hit me up in the comments!) One of my BFFs, Alaina, will be with me and this past week, I created an Intro to <span>Phish</span> playlist for her...I am working on my first convert! Whether Alaina becomes a phan or not, I know she is guaranteed to have an incredible time at this show. But just for fun, I wanted to share my playlist. Let me know what you think I should add or delete! #onephishphanatatime These are in no particular order - just 19 of my all-time favorites thus far.The LandladyThe Moma DanceSimpleThe LizardsCariniMeatstickWilsonBathtub GinRiftStrange DesignDavid BowieGhostMakisupa PolicemanCavernTweezerWaiting All NightYou Enjoy MyselfUndermindHarry Hood The post Your Intro to <span>Phish</span> appeared first on 50thirdand3rd. Your Intro to <span>Phish</span>",
+            "id":"385b25de6f23576ad880b66eb74dcc4d"
+         },
+         {  
+            "name":"Making Memories with Kacey Musgraves",
+            "url":"http://www.50thirdand3rd.com/making-memories-kacey-musgraves/",
+            "date_posted":"2016-03-05T13:20:06",
+            "date_found":"2016-03-06T00:00:00",
+            "summary":"By Steph It was a perfect Saturday. It started with buying my first pair of <span>Phish</span> tickets for the June 26 Deer Creek show, where I will be Page Side in the pit. I bought two, not knowing who would be my <span>Phish</span> buddy. That night, I headed to Stage AE to see Kacey Musgraves, country music's brightest badass, with one of my best friends, Alaina, and our friend Denise. We shared beers, caught up on life, bought our Kacey T-shirts, laughed, cried and basically had one of the most magical friend nights ever. \"Denise, Steph's new thing is being into <span>Phish</span>,\" Alaina said before Kacey took the stage. I mentioned having",
+            "id":"ebba633d0cecebeb12ea4c552a325985"
+         },
+         {  
+            "name":"SOMBA – “The Ox”",
+            "url":"http://www.obscuresound.com/2016/03/somba-the-ox/",
+            "date_posted":"2016-03-04T21:06:28",
+            "date_found":"2016-03-05T00:00:00",
+            "summary":"strong with their chilled-out rock. On \"The Ox\" from their latest full-length effort, Homônimo, the band channels hazy Os Mutantes-indebted guitars as the drums amble along behind. Despite the calm atmosphere, guitars still ring through with slow-burning solos that would be right at home at any outdoor summer festival or on a <span>Phish</span> record. Not to mention, the band's frontman sounds similar to Trey Anastasio, an icon of the jam band scene, as well as Super Furry Animals' Gruff Rhys. SOMBA proves that even after being a band since 1998, you can still sound just as fresh as when you started. The post SOMBA",
+            "id":"46ed3b12fbfd69fb7b055537aa24649a"
+         }
+      ]
+   }
+}

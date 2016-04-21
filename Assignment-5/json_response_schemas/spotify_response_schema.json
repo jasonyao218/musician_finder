@@ -1,0 +1,429 @@
+// This is an example of the json response content for a Spotify query for an artist.
+// The format and expect value of each field are the same as what is in this example.
+{
+  "artists" : {
+    "href" : "https://api.spotify.com/v1/search?query=Phish&offset=0&limit=20&type=artist",
+    "items" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/5wbIWUzTPuTxTyG6ouQKqz"
+      },
+      "followers" : { //required
+        "href" : null,
+        "total" : 121065
+      },
+      "genres" : [ "jam band" ], //required
+      "href" : "https://api.spotify.com/v1/artists/5wbIWUzTPuTxTyG6ouQKqz",
+      "id" : "5wbIWUzTPuTxTyG6ouQKqz", //required, this can be the key for this schema
+      "images" : [ {
+        "height" : 1000,
+        "url" : "https://i.scdn.co/image/2721b7ee5429e703742c8317c2851e201fd237a7",
+        "width" : 1000
+      }, {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/7dc63a8c8afa21e1c821bc49b7e6da4beec28df7",
+        "width" : 640
+      }, {
+        "height" : 200,
+        "url" : "https://i.scdn.co/image/d697dae4984873a58a2e2d8e6d99723fdc00896a",
+        "width" : 200
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/26c087a37a60ffab36e0eeba86f25537ce58487f",
+        "width" : 64
+      } ],
+      "name" : "Phish", //required
+      "popularity" : 61, //required
+      "type" : "artist",
+      "uri" : "spotify:artist:5wbIWUzTPuTxTyG6ouQKqz"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1muH6g6IHAZSSddoFVk9Gf"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 5
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/1muH6g6IHAZSSddoFVk9Gf",
+      "id" : "1muH6g6IHAZSSddoFVk9Gf",
+      "images" : [ ],
+      "name" : "Phishskale Mackn",
+      "popularity" : 10,
+      "type" : "artist",
+      "uri" : "spotify:artist:1muH6g6IHAZSSddoFVk9Gf"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1toEithnDpUUlVBwDK1HCO"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 0
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/1toEithnDpUUlVBwDK1HCO",
+      "id" : "1toEithnDpUUlVBwDK1HCO",
+      "images" : [ ],
+      "name" : "Phishkale",
+      "popularity" : 6,
+      "type" : "artist",
+      "uri" : "spotify:artist:1toEithnDpUUlVBwDK1HCO"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/4uHuhwmhYwqAHI5CeklcFl"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 262
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/4uHuhwmhYwqAHI5CeklcFl",
+      "id" : "4uHuhwmhYwqAHI5CeklcFl",
+      "images" : [ {
+        "height" : 636,
+        "url" : "https://i.scdn.co/image/46b6ef753cf6170bee2a3718ca1842f6d2ead13a",
+        "width" : 640
+      }, {
+        "height" : 298,
+        "url" : "https://i.scdn.co/image/77e4adcad0a2bd9bc5490637069b71e2b996941c",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/98c1ce0ea7964ae7c04459714167d283e7be9d93",
+        "width" : 64
+      } ],
+      "name" : "The Dude Of Life And Phish",
+      "popularity" : 7,
+      "type" : "artist",
+      "uri" : "spotify:artist:4uHuhwmhYwqAHI5CeklcFl"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/4ntKcjXGH4fZt0gmZ0IM1q"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 0
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/4ntKcjXGH4fZt0gmZ0IM1q",
+      "id" : "4ntKcjXGH4fZt0gmZ0IM1q",
+      "images" : [ ],
+      "name" : "Phishkale Mackn",
+      "popularity" : 3,
+      "type" : "artist",
+      "uri" : "spotify:artist:4ntKcjXGH4fZt0gmZ0IM1q"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3Q2RkQWjlcjV1UEs6Ph6Qy"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 47
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/3Q2RkQWjlcjV1UEs6Ph6Qy",
+      "id" : "3Q2RkQWjlcjV1UEs6Ph6Qy",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/80c68cb039d5793f24b720e522b5288d4124d0bd",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/68be910d9c9ec9c2c3b3b57bf2a68c46e4655880",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/aff1b35daa58523aee7ab9be29a1d2b4982e24ec",
+        "width" : 64
+      } ],
+      "name" : "Phishbacher",
+      "popularity" : 5,
+      "type" : "artist",
+      "uri" : "spotify:artist:3Q2RkQWjlcjV1UEs6Ph6Qy"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/41AzyLcv2mGDXQ37jOam5J"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 2
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/41AzyLcv2mGDXQ37jOam5J",
+      "id" : "41AzyLcv2mGDXQ37jOam5J",
+      "images" : [ ],
+      "name" : "Phishscale",
+      "popularity" : 2,
+      "type" : "artist",
+      "uri" : "spotify:artist:41AzyLcv2mGDXQ37jOam5J"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/5kOIuXMAP2dXJLJstamtee"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 1
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/5kOIuXMAP2dXJLJstamtee",
+      "id" : "5kOIuXMAP2dXJLJstamtee",
+      "images" : [ ],
+      "name" : "Phishcale Mackin",
+      "popularity" : 2,
+      "type" : "artist",
+      "uri" : "spotify:artist:5kOIuXMAP2dXJLJstamtee"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/53bUExLjUvCHZCO5i3Odgu"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 1
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/53bUExLjUvCHZCO5i3Odgu",
+      "id" : "53bUExLjUvCHZCO5i3Odgu",
+      "images" : [ ],
+      "name" : "Phishskale",
+      "popularity" : 2,
+      "type" : "artist",
+      "uri" : "spotify:artist:53bUExLjUvCHZCO5i3Odgu"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/6F2zCoiy3oX3bXpVFtaeVB"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 8
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/6F2zCoiy3oX3bXpVFtaeVB",
+      "id" : "6F2zCoiy3oX3bXpVFtaeVB",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/42a80628e821383926f3f5259c360bb22e9acf40",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/8d3c24903af4d01e502ef28ab9317b1c83aef824",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/7f550ad9c23cfe7ab6dbb7c593d2c3f695a536bd",
+        "width" : 64
+      } ],
+      "name" : "Bobby Phisher",
+      "popularity" : 2,
+      "type" : "artist",
+      "uri" : "spotify:artist:6F2zCoiy3oX3bXpVFtaeVB"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/4x4l8QRo7aRye5yE2wY9hY"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 4
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/4x4l8QRo7aRye5yE2wY9hY",
+      "id" : "4x4l8QRo7aRye5yE2wY9hY",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/ca1c0e4513da627456502194714f66a6085e6f7f",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/ec85349967f1a4172cf2d89cc38ac3a47ad1d3a5",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/515f1e4f426338aac45aad435c86c1e584834078",
+        "width" : 64
+      } ],
+      "name" : "Phishbone",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:4x4l8QRo7aRye5yE2wY9hY"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/6sJC12ZCPC3DwxsFc8M7j1"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 1
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/6sJC12ZCPC3DwxsFc8M7j1",
+      "id" : "6sJC12ZCPC3DwxsFc8M7j1",
+      "images" : [ ],
+      "name" : "Cell Phish",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:6sJC12ZCPC3DwxsFc8M7j1"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/2CzKM7Sp6O9nzEMjNnIrk7"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 0
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/2CzKM7Sp6O9nzEMjNnIrk7",
+      "id" : "2CzKM7Sp6O9nzEMjNnIrk7",
+      "images" : [ ],
+      "name" : "Isla Phisher",
+      "popularity" : 1,
+      "type" : "artist",
+      "uri" : "spotify:artist:2CzKM7Sp6O9nzEMjNnIrk7"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/37o1s8FUpDlesqiq4jGmSA"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 20
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/37o1s8FUpDlesqiq4jGmSA",
+      "id" : "37o1s8FUpDlesqiq4jGmSA",
+      "images" : [ {
+        "height" : 600,
+        "url" : "https://i.scdn.co/image/561acc253a6e3f22058fe21a1a94ab12fb840948",
+        "width" : 600
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/3833628190bb7688f3ea5e20eb046dfe848685db",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/5c4aa08439b6d06f22ecd55564b8e811e1b2f584",
+        "width" : 64
+      } ],
+      "name" : "Phisheye",
+      "popularity" : 1,
+      "type" : "artist",
+      "uri" : "spotify:artist:37o1s8FUpDlesqiq4jGmSA"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/4U9YW5N9gx0sE85VYHdlgp"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 8
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/4U9YW5N9gx0sE85VYHdlgp",
+      "id" : "4U9YW5N9gx0sE85VYHdlgp",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/1ff246d0fab3ba80258f1f10dab983b697d56898",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/6b0a461f9d2251d84d9b56fd9d79cc4596bcfab2",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/7da8949d566334380ff97e48f78e1cefeb1c1bf2",
+        "width" : 64
+      } ],
+      "name" : "Cell-Phish",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:4U9YW5N9gx0sE85VYHdlgp"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3QiGXmhOjzt6efXJ0awakG"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 66
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/3QiGXmhOjzt6efXJ0awakG",
+      "id" : "3QiGXmhOjzt6efXJ0awakG",
+      "images" : [ {
+        "height" : 523,
+        "url" : "https://i.scdn.co/image/864e16761172e9cb1c08b50d06bf4c1ad0ca3658",
+        "width" : 640
+      }, {
+        "height" : 245,
+        "url" : "https://i.scdn.co/image/074e2070e05992121e1e0497edcdcc9d6bf3c6ab",
+        "width" : 300
+      }, {
+        "height" : 52,
+        "url" : "https://i.scdn.co/image/7b597ef32ba2e1e738b9380c66ea81e6870ba156",
+        "width" : 64
+      } ],
+      "name" : "Phish / Showcase & Belly Band",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:3QiGXmhOjzt6efXJ0awakG"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/5dFsdH7urB4nZCKYzHO82Y"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 0
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/5dFsdH7urB4nZCKYzHO82Y",
+      "id" : "5dFsdH7urB4nZCKYzHO82Y",
+      "images" : [ ],
+      "name" : "Junior Phish",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:5dFsdH7urB4nZCKYzHO82Y"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0nunEEelZ4AarQB04gjZcu"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 65
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/0nunEEelZ4AarQB04gjZcu",
+      "id" : "0nunEEelZ4AarQB04gjZcu",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/ad09e5a20049ae2dd0c9f7c81ca9d17a1a35ed8e",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/48f0f246931ad297251d201caf6a9527d075d9a3",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/39e3c727610e74a90198740e92c71838f03a1c37",
+        "width" : 64
+      } ],
+      "name" : "Phish by Various Artists",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:0nunEEelZ4AarQB04gjZcu"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/6hhCVEYZddFB1SoPZCtYUC"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 5
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/6hhCVEYZddFB1SoPZCtYUC",
+      "id" : "6hhCVEYZddFB1SoPZCtYUC",
+      "images" : [ ],
+      "name" : "Big Eyed Phish",
+      "popularity" : 2,
+      "type" : "artist",
+      "uri" : "spotify:artist:6hhCVEYZddFB1SoPZCtYUC"
+    } ],
+    "limit" : 20,
+    "next" : null,
+    "offset" : 0,
+    "previous" : null,
+    "total" : 19
+  }
+}

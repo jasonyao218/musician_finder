@@ -1,0 +1,93 @@
+<head>
+  <title>musician_page</title>
+</head>
+
+<body>
+  <center>
+    <h1>Search Results</h1>
+     
+     </script>
+
+    <a> You searched for: <script> var name = window.location.search.split('=')[1]; document.writeln(name);</script></a>
+<p></p>
+
+
+<button type="button" class="btn btn-default" onclick="loadDoc()">Get info on <script> var name = window.location.search.split('=')[1]; document.write(name);</script></button>
+
+<br>
+<br>
+
+<button type="button" class="btn btn-default" onclick="loadDoc2()">Read recent blog reviews on <script> var name = window.location.search.split('=')[1]; document.write(name);</script></button>
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      var obj = JSON.parse(xhttp.responseText);
+      document.writeln("<h1>", obj.artists.items[0].name, "</h1>");
+      document.writeln("<h2>Popularity score: ", obj.artists.items[0].popularity, "</h2>");
+      document.writeln("<h2>Number of followers: ", obj.artists.items[0].followers.total, "</h2>");
+      if (obj.artists.items[0].genres.length !== 0) {
+        document.writeln("<h2>Genres: ", obj.artists.items[0].genres, "</h2>");
+         }
+      document.writeln("<img src=", obj.artists.items[0].images[0].url, ">");
+
+      if (obj.artists.items.length > 0) {
+        document.writeln("Did you mean... "); //Put this in an if statement, only if the list is nonzero show it
+        for (i = 1; i < obj.artists.items.length; i++) { 
+            document.writeln("<a href=/musician_page.html?name=", obj.artists.items[i].name.split(' ').join('+'), "> ", obj.artists.items[i].name, "</a>", ", ");
+            }
+        }
+
+
+    }
+  };
+  var name = window.location.search.split('=')[1];
+  var urlbase = "https://api.spotify.com/v1/search?type=artist&q=";
+  var url = urlbase.concat(name);
+
+  xhttp.open("GET", url, true);
+  xhttp.send();
+}
+
+function loadDoc2() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      var obj = JSON.parse(xhttp.responseText);
+      for (i = 0; i < obj.response.blogs.length; i++) { 
+        document.write("<a href =", obj.response.blogs[i].url, " target='_blank'>",obj.response.blogs[i].name, "</a><br>");
+        document.write("<a>Date Posted: ", obj.response.blogs[i].date_posted.substring(0,10), "</a><br>");
+        document.write("<a>Article summary: ", obj.response.blogs[i].summary, "</a><br>");
+        
+        document.writeln("<br>");
+      }
+    }
+  };
+
+    readStringFromFileAtPath = function(pathOfFileToReadFrom) { //used to get the API key for EchoNest
+        var request = new XMLHttpRequest();
+        request.open("GET", pathOfFileToReadFrom, false);
+        request.send(null);
+        var returnValue = request.responseText;
+
+        return returnValue;
+    }
+
+  var api_key = readStringFromFileAtPath ("api_key.txt" );
+  var name = window.location.search.split('=')[1];
+  var urlbase = "http://developer.echonest.com/api/v4/artist/blogs?api_key=".concat(api_key).concat("&format=json&name=");
+  var url = urlbase.concat(name);
+
+  xhttp.open("GET", url, true);
+  xhttp.send();
+}
+
+
+</script>
+
+
+   </center>
+</body>
+
