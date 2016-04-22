@@ -9,7 +9,7 @@ var router = express.Router();
 router.get('/artists', function(req, res){
   Artist.find({}, function(err, artists){
     if(err){
-      return res.status(500).json({mseeage: err.message});
+      return res.status(500).json({message: err.message});
     }
     res.json({artists: artists});
   });
