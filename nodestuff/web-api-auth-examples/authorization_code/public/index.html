@@ -2,8 +2,19 @@
 <html>
   <head>
     <title>Welcome to Musician Finder! To use, please log in with Spotify</title>
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <!---<link rel="stylesheet" href="/bootstrap-3.3.6-dist/css/bootstrap.css">-->
+    <link rel="stylesheet" href="styles.css">
     <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+        overflow: hidden;
+    }
       #login, #loggedin {
         display: none;
       }
@@ -17,24 +28,28 @@
   </head>
 
   <body>
-    <div class="container">
+    
+    <div class="container" style="z-index:10;">
       <div id="login">
+        <img src="/graphics/homepage.jpg" style="position: absolute; width: 100%; height: 100%; z-index:-10;">
         <h1>Welcome to Musician Finder! To use, please log in with Spotify</h1>
-        <a href="/login" class="btn btn-primary">Log in with Spotify</a>
+        <a href="/login" id="btn">Log in with Spotify</a>
       </div>
       <div id="loggedin">
+        
+          <h2>Search for a musician below!</h2>
+          <form id="searchForm" action="/musician_page.html" method="GET">
+            <h4>Artist Name:</h4>
+              <input id="name" type="text" name="name"/><br>
+              <input id="submit" type="submit" value="Submit">
+          </form>
         <div id="user-profile">
         </div>
-        <div id="oauth">
+        <div style="visibility:hidden; width: 0px; height: 0px;">
+          <div id="oauth">
+          </div>
+          <button class="btn btn-default" id="obtain-new-token">Obtain new token using the refresh token</button>
         </div>
-        <button class="btn btn-default" id="obtain-new-token">Obtain new token using the refresh token</button>
-          <h2>Search for a musician below!</h2>
-          <form action="/musician_page.html" method="GET">
-          Artist Name: 
-              <input id="name" type="text" name="name"/>
-              <input type="submit" value="Submit">
-          </form>
-
       </div>
       
 
@@ -48,7 +63,7 @@
         </div>
         <div class="media-body">
           <dl class="dl-horizontal">
-            <dt>Display name</dt><dd class="clearfix">{{display_name}}</dd>
+            <dt>Name</dt><dd class="clearfix">{{display_name}}</dd>
             <dt>Id</dt><dd>{{id}}</dd>
             <dt>Email</dt><dd>{{email}}</dd>
             <dt>Spotify URI</dt><dd><a href="{{external_urls.spotify}}">{{external_urls.spotify}}</a></dd>

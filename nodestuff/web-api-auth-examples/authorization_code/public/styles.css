@@ -1,0 +1,98 @@
+h1, h2, h3, h4, h5, h6, p, a {
+	font-family: Helvetica;
+}
+
+#login h1 {
+	text-align: center;
+	padding-top: 60px;
+	font-size: 38px;
+	color: white;
+}
+
+#user-profile {
+
+}
+
+.btn {
+	background-color: white;
+	color: black;
+	border: 2px solid black;
+	padding: 7px;
+	border-radius: 4px;
+}
+
+.btn:hover{
+	background-color: black;
+	color: white;
+}
+
+a{
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+#btn {
+	padding: 20px;
+	background-color: white;
+	border: 2px solid blue;
+	color: blue;
+	border-radius: 4px;
+	position: absolute;
+	left: 45%;
+	top: 50%;
+}
+
+#btn:hover {
+	background-color: blue;
+	color: white;
+
+}
+
+h2 {
+	font-size: 36px;
+	text-align: center;
+	margin: 20px;
+}
+
+#loggedin h4 {
+	font-size: 20px;
+	text-align: center;
+}
+
+#name {
+	border: 2px solid black;
+	border-radius: 4px;
+	width: 200px;
+	height: 20px;
+	padding: 5px;
+	font-size: 16px;
+	margin: 20px;
+}
+
+#name:focus {
+	border: 2px solid red;
+}
+
+#searchForm {
+	text-align: center;
+}
+
+#submit {
+	border: 2px solid red;
+	border-radius: 4px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 5px;
+
+}
+
+#submit:hover {
+	background-color: red;
+	color: white;
+}
+
+.musician {
+	font-family: Helvetica;
+}
