@@ -17,7 +17,12 @@
 <br>
 <br>
 
-<button type="button" class="btn btn-default" onclick="loadDoc2()">Read recent blog reviews on <script> var name = window.location.search.split('=')[1]; document.write(name);</script></button>
+<button type="button" class="btn btn-default" onclick="loadDoc2()">Read recent blog posts on <script> var name = window.location.search.split('=')[1]; document.write(name);</script></button>
+
+<br>
+<br>
+
+<button type="button" class="btn btn-default" onclick="loadDoc3()">Read reviews on <script> var name = window.location.search.split('=')[1]; document.write(name);</script></button>
 
 <script>
 function loadDoc() {
@@ -78,6 +83,41 @@ function loadDoc2() {
   var api_key = readStringFromFileAtPath ("api_key.txt" );
   var name = window.location.search.split('=')[1];
   var urlbase = "http://developer.echonest.com/api/v4/artist/blogs?api_key=".concat(api_key).concat("&format=json&name=");
+  var url = urlbase.concat(name);
+
+  xhttp.open("GET", url, true);
+  xhttp.send();
+}
+
+function loadDoc3() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      var obj = JSON.parse(xhttp.responseText);
+      for (i = 0; i < obj.response.reviews.length; i++) { 
+        document.write("<a href =", obj.response.reviews[i].url, " target='_blank'>",obj.response.reviews[i].name, "</a><br>");
+        if (typeof obj.response.reviews[i].date_reviewed !== "undefined") {
+        document.write("<a>Date Reviewed: ", obj.response.reviews[i].date_reviewed, "</a><br>");
+            }
+        document.write("<a>Release: ", obj.response.reviews[i].release, "</a><br>");
+        
+        document.writeln("<br>");
+      }
+    }
+  };
+
+    readStringFromFileAtPath = function(pathOfFileToReadFrom) { //used to get the API key for EchoNest
+        var request = new XMLHttpRequest();
+        request.open("GET", pathOfFileToReadFrom, false);
+        request.send(null);
+        var returnValue = request.responseText;
+
+        return returnValue;
+    }
+
+  var api_key = readStringFromFileAtPath ("api_key.txt" );
+  var name = window.location.search.split('=')[1];
+  var urlbase = "http://developer.echonest.com/api/v4/artist/reviews?api_key=".concat(api_key).concat("&format=json&name=");
   var url = urlbase.concat(name);
 
   xhttp.open("GET", url, true);
