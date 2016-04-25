@@ -9,7 +9,7 @@
 
 var express = require('express'); // Express web server framework
 var request = require('request'); // "Request" library
-var db = require('./database');
+var db = require('./config/database');
 var querystring = require('querystring');
 var cookieParser = require('cookie-parser');
 
