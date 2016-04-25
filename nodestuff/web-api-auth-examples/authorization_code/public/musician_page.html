@@ -139,9 +139,9 @@ function loadDoc4() {
   xhttp.onreadystatechange = function() {
     if (xhttp.readyState == 4 && xhttp.status == 200) {
       var obj = JSON.parse(xhttp.responseText);
-      document.write("<h1>Below are some similar artists you may like!</h1>");
+      document.write("<h1 style='font-family:Helvetica;'>Below are some similar artists you may like!</h1>");
       for (i = 0; i < obj.response.artists.length; i++) { 
-        document.write("<h2>", obj.response.artists[i].name, "</h2>");
+        document.write("<h2 style='font-family:Helvetica;'>", obj.response.artists[i].name, "</h2>");
         }
     }
   };
