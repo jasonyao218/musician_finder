@@ -24,6 +24,11 @@
 
 <button type="button" class="btn btn-default" onclick="loadDoc3()">Read reviews on <script> var name = window.location.search.split('=')[1]; document.write(name);</script></button>
 
+<br>
+<br>
+
+<button type="button" class="btn btn-default" onclick="loadDoc4()">Find artists similar to <script> var name = window.location.search.split('=')[1]; document.write(name);</script></button>
+
 <script>
 function loadDoc() {
   var xhttp = new XMLHttpRequest();
@@ -124,6 +129,35 @@ function loadDoc3() {
   xhttp.send();
 }
 
+function loadDoc4() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      var obj = JSON.parse(xhttp.responseText);
+      document.write("<h1>Below are some similar artists you may like!</h1>");
+      for (i = 0; i < obj.response.artists.length; i++) { 
+        document.write("<h2>", obj.response.artists[i].name, "</h2>");
+        }
+    }
+  };
+
+    readStringFromFileAtPath = function(pathOfFileToReadFrom) { //used to get the API key for EchoNest
+        var request = new XMLHttpRequest();
+        request.open("GET", pathOfFileToReadFrom, false);
+        request.send(null);
+        var returnValue = request.responseText;
+
+        return returnValue;
+    }
+
+  var api_key = readStringFromFileAtPath ("api_key.txt" );
+  var name = window.location.search.split('=')[1];
+  var urlbase = "http://developer.echonest.com/api/v4/artist/similar?api_key=".concat(api_key).concat("&format=json&name=");
+  var url = urlbase.concat(name);
+
+  xhttp.open("GET", url, true);
+  xhttp.send();
+}
 
 </script>
 
