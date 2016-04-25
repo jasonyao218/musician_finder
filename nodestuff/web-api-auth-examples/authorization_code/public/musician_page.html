@@ -66,6 +66,7 @@ function loadDoc2() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (xhttp.readyState == 4 && xhttp.status == 200) {
+      document.body.innerHTML="";
       var obj = JSON.parse(xhttp.responseText);
       for (i = 0; i < obj.response.blogs.length; i++) { 
         document.write("<a style='font-family:Helvetica;' href =", obj.response.blogs[i].url, " target='_blank'>",obj.response.blogs[i].name, "</a><br>");
@@ -101,11 +102,11 @@ function loadDoc3() {
     if (xhttp.readyState == 4 && xhttp.status == 200) {
       var obj = JSON.parse(xhttp.responseText);
       for (i = 0; i < obj.response.reviews.length; i++) { 
-        document.write("<a href =", obj.response.reviews[i].url, " target='_blank'>",obj.response.reviews[i].name, "</a><br>");
+        document.write("<a style='font-family:Helvetica;' href =", obj.response.reviews[i].url, " target='_blank'>",obj.response.reviews[i].name, "</a><br>");
         if (typeof obj.response.reviews[i].date_reviewed !== "undefined") {
-        document.write("<a>Date Reviewed: ", obj.response.reviews[i].date_reviewed, "</a><br>");
+        document.write("<a style='font-family:Helvetica; font-weight:bold;' >Date Reviewed: ", obj.response.reviews[i].date_reviewed, "</a><br>");
             }
-        document.write("<a>Release: ", obj.response.reviews[i].release, "</a><br>");
+        document.write("<a style='font-family:Helvetica;' >Release: ", obj.response.reviews[i].release, "</a><br>");
         
         document.writeln("<br>");
       }
