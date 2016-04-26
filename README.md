@@ -3,6 +3,8 @@
 <p>Team Members: Erica Wivagg, Luke Rosenfeld, Jason Yao, and Kobe Cheng</p>
 
 <h5>To run this app:</h5>
+<p>Run the mongo daemon.</p>
+<p>Run mongo.</p>
 <p>Go to /nodestuff/web-api-auth-examples/authorization_code and run "node app.js" from the command line.</p>
 <p>This will get the app running on localhost:8888. Enter localhost:8888 into your favorite web browser, and the site will appear. </p>
 
