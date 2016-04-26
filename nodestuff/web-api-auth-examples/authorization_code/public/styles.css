@@ -2,6 +2,14 @@ h1, h2, h3, h4, h5, h6, p, a {
 	font-family: Helvetica;
 }
 
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
 #login h1 {
 	text-align: center;
 	padding-top: 60px;
@@ -15,14 +23,14 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .btn {
 	background-color: white;
-	color: black;
-	border: 2px solid black;
+	color: #81b71a;
+	border: 2px solid #81b71a;
 	padding: 7px;
 	border-radius: 4px;
 }
 
 .btn:hover{
-	background-color: black;
+	background-color: #81b71a;
 	color: white;
 }
 
@@ -34,8 +42,8 @@ a{
 #btn {
 	padding: 20px;
 	background-color: white;
-	border: 2px solid blue;
-	color: blue;
+	border: 2px solid #81b71a;
+	color: #81b71a;
 	border-radius: 4px;
 	position: absolute;
 	left: 45%;
@@ -43,7 +51,7 @@ a{
 }
 
 #btn:hover {
-	background-color: blue;
+	background-color: #81b71a;
 	color: white;
 
 }
@@ -60,7 +68,7 @@ h2 {
 }
 
 #name {
-	border: 2px solid black;
+	border: 2px solid #81b71a;
 	border-radius: 4px;
 	width: 200px;
 	height: 20px;
@@ -70,7 +78,7 @@ h2 {
 }
 
 #name:focus {
-	border: 2px solid red;
+	border: 2px solid white;
 }
 
 #searchForm {
@@ -78,7 +86,8 @@ h2 {
 }
 
 #submit {
-	border: 2px solid red;
+	border: 2px solid #81b71a;
+	background-color: white;
 	border-radius: 4px;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -89,7 +98,7 @@ h2 {
 }
 
 #submit:hover {
-	background-color: red;
+	background-color: #81b71a;
 	color: white;
 }
 

@@ -3,7 +3,7 @@
   <link rel="stylesheet" href="/styles.css">
 </head>
 
-<body>
+<body style='background-color: #cccccc;'>
   <center>
     <h2>Search Results</h2>
      
@@ -21,26 +21,34 @@
 <button type="button" class="btn" onclick="loadDoc2()">Read recent blog reviews on <script> var name = window.location.search.split('=')[1]; document.write(name);</script></button>
 <br>
 <br>
-<button type="button" class="btn btn-default" onclick="loadDoc3()">Read reviews on <script> var name = window.location.search.split('=')[1]; document.write(name);</script></button>
+<button type="button" class="btn" onclick="loadDoc3()">Read reviews on <script> var name = window.location.search.split('=')[1]; document.write(name);</script></button>
 <br>
 <br>
-<button type="button" class="btn btn-default" onclick="loadDoc4()">Find artists similar to <script> var name = window.location.search.split('=')[1]; document.write(name);</script></button>
+<button type="button" class="btn" onclick="loadDoc4()">Find artists similar to <script> var name = window.location.search.split('=')[1]; document.write(name);</script></button>
+<br>
+<br>
+<button type="button" class="btn" onclick="document.location='/index.html'">Home</script></button>
 
 <script>
+function goBack() {
+  location.reload();
+}
+
 function loadDoc() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (xhttp.readyState == 4 && xhttp.status == 200) {
       var obj = JSON.parse(xhttp.responseText);
-      
+      document.writeln("<body style='background-color: #cccccc;'>");
       document.writeln("<div style='width:500px; float:left; padding-bottom: 50px;'>");
+      document.writeln("<button type='button' style='background-color:white; color:#81b71a; border:2px solid #81b71a; padding:7px; border-radius:4px;' onclick='goBack()'> Go back </button>");
       document.writeln("<h1 style='font-family:Helvetica;'>", obj.artists.items[0].name, "</h1>");
       document.writeln("<h2 style='font-family:Helvetica;'>Popularity score: ", obj.artists.items[0].popularity, "</h2>");
       document.writeln("<h2 style='font-family:Helvetica;'>Number of followers: ", obj.artists.items[0].followers.total, "</h2>");
       if (obj.artists.items[0].genres.length !== 0) {
         document.writeln("<h2 style='font-family:Helvetica;'>Genres: ", obj.artists.items[0].genres, "</h2>");
          }
-      document.writeln("<button type='button' style='background-color: white; color: black; border:2px solid black; padding:7px; border-radius:4px; font-family:Helvetica;' onclick='loadDoc2()'>Read recent blog reviews on ", obj.artists.items[0].name, "</button>");
+      document.writeln("<button type='button' style='background-color: white; color:#81b71a; border:2px solid #81b71a; padding:7px; border-radius:4px; font-family:Helvetica;' onclick='loadDoc2()'>Read recent blog reviews on ", obj.artists.items[0].name, "</button>");
       document.writeln("</div>");
       document.writeln("<div style='float:left; width:100px; top:-150px; height:200px;'>");
       document.writeln("<img style='width: 800px;' src=", obj.artists.items[0].images[0].url, ">");
@@ -53,8 +61,7 @@ function loadDoc() {
             }
         }
       document.writeln("</div>");
-
-
+      document.writeln("</body>");
     }
   };
   var name = window.location.search.split('=')[1];
@@ -71,6 +78,8 @@ function loadDoc2() {
     if (xhttp.readyState == 4 && xhttp.status == 200) {
       document.body.innerHTML="";
       var obj = JSON.parse(xhttp.responseText);
+      document.writeln("<body style='background-color: #cccccc;'>");
+      document.writeln("<button type='button' style='background-color:white; color:#81b71a; border:2px solid #81b71a; padding:7px; border-radius:4px; margin-bottom:10px;' onclick='goBack()'> Go back </button><br>");
       for (i = 0; i < obj.response.blogs.length; i++) { 
         document.write("<a style='font-family:Helvetica;' href =", obj.response.blogs[i].url, " target='_blank'>",obj.response.blogs[i].name, "</a><br>");
         document.write("<a style='font-family:Helvetica; font-weight:bold;'>Date Posted: ", obj.response.blogs[i].date_posted.substring(0,10), "</a><br>");
@@ -78,6 +87,7 @@ function loadDoc2() {
         
         document.writeln("<br>");
       }
+      document.writeln("</body>");
     }
   };
 
@@ -104,15 +114,18 @@ function loadDoc3() {
   xhttp.onreadystatechange = function() {
     if (xhttp.readyState == 4 && xhttp.status == 200) {
       var obj = JSON.parse(xhttp.responseText);
+      document.writeln("<body style='background-color: #cccccc;'>");
+      document.writeln("<button type='button' style='background-color:white; color:#81b71a; border:2px solid #81b71a; padding:7px; border-radius:4px; margin-bottom:10px;' onclick='goBack()'> Go back </button><br>");
       for (i = 0; i < obj.response.reviews.length; i++) { 
         document.write("<a style='font-family:Helvetica;' href =", obj.response.reviews[i].url, " target='_blank'>",obj.response.reviews[i].name, "</a><br>");
         if (typeof obj.response.reviews[i].date_reviewed !== "undefined") {
         document.write("<a style='font-family:Helvetica; font-weight:bold;' >Date Reviewed: ", obj.response.reviews[i].date_reviewed, "</a><br>");
-            }
+        }
         document.write("<a style='font-family:Helvetica;' >Release: ", obj.response.reviews[i].release, "</a><br>");
         
         document.writeln("<br>");
       }
+      document.writeln("</body>");
     }
   };
 
@@ -139,10 +152,13 @@ function loadDoc4() {
   xhttp.onreadystatechange = function() {
     if (xhttp.readyState == 4 && xhttp.status == 200) {
       var obj = JSON.parse(xhttp.responseText);
+      document.writeln("<body style='background-color: #cccccc;'>");
+      document.writeln("<button type='button' style='background-color:white; color:#81b71a; border:2px solid #81b71a; padding:7px; border-radius:4px;' onclick='goBack()'> Go back </button>");
       document.write("<h1 style='font-family:Helvetica;'>Below are some similar artists you may like!</h1>");
       for (i = 0; i < obj.response.artists.length; i++) { 
         document.write("<h2 style='font-family:Helvetica;'>", obj.response.artists[i].name, "</h2>");
         }
+      document.writeln("</body>");
     }
   };
 

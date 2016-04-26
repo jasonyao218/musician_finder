@@ -1,8 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>Welcome to Musician Finder! To use, please log in with Spotify</title>
-    <!---<link rel="stylesheet" href="/bootstrap-3.3.6-dist/css/bootstrap.css">-->
+    <title>Welcome to Musician Finder!</title>
     <link rel="stylesheet" href="styles.css">
     <style type="text/css">
     * {
@@ -29,13 +28,13 @@
 
   <body>
     
-    <div class="container" style="z-index:10;">
+    <div class="container" style="z-index:10; height:100%;">
       <div id="login">
         <img src="/graphics/homepage.jpg" style="position: absolute; width: 100%; height: 100%; z-index:-10;">
         <h1>Welcome to Musician Finder!</h1>
         <a href="/login" id="btn">Log in with Spotify</a>
       </div>
-      <div id="loggedin">
+      <div id="loggedin" style='background-color: #cccccc; height:100%;'>
         
           <h2>Search for a musician below!</h2>
           <form id="searchForm" action="/musician_page.html" method="GET">
